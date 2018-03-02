@@ -131,13 +131,13 @@ hr {
 	text-align: center;
 }
 
-@media(max-width: 50em) {
+@media(max-device-width: 50em) {
 	.services__item {
 		width: calc(50% - 20px);
 	}
 }
 
-@media(max-width: 40em) {
+@media(max-device-width: 40em) {
 	.services__item {
 		width: calc(80% - 20px);
 	}
@@ -176,13 +176,13 @@ hr {
 	align-items: center;
 }
 
-@media(max-width: 50em) {
+@media(max-device-width: 50em) {
 	.team__item {
 		width: calc(50% - 20px);
 	}
 }
 
-@media(max-width: 40em) {
+@media(max-device-width: 40em) {
 	.team__item {
 		width: 80%;
 	}
@@ -240,7 +240,7 @@ hr {
 	align-items: center;
 }
 
-@media(max-width: 50em) {
+@media(max-device-width: 50em) {
 	.skills__item {
 		width: 80%;
 	}
@@ -274,12 +274,18 @@ hr {
 }
 
 .portfolio__item {
+	width: calc(50% - 20px);
 	margin-bottom: 50px;
 	text-align: center;
 }
 
+@media(max-device-width: 800px){
+	.portfolio__item {
+		width: 80%;
+	}
+}
 .portfolio__item--image {
-	width: 500px;
+	max-width: 400px;
 }
 
 .portfolio__item--name {
@@ -308,7 +314,7 @@ hr {
 	margin-bottom: 30px;
 }
 
-@media(max-width: 50em){
+@media(max-device-width: 50em){
 	.opinion__item {
 		witdh: 80%;
 	}
