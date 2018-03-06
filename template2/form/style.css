@@ -1,0 +1,125 @@
+:root {
+	--containerColor: #191919;
+
+	--primaryMainColor: #4a148c;
+	--primaryLightColor: #7c43bd;
+	--primaryDarkColor: #12005e;
+
+	--secondaryMainColor: #ba68c8;
+	--secondaryLightColor: #ee98fb;
+	--secondaryDarkColor: #883997;
+
+	--textColor: #fff;
+}
+
+
+html, body, h1, h2, h3, ul, li, p {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	/*background-color: var(--containerColor);*/
+	background: url('img/ep_naturalblack.png');
+	color: var(--textColor);
+
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+#container {
+	width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  align-content: center; 
+  justify-content: center; 
+ 	overflow: auto;   
+}
+
+.main__wrapper {
+	font-size: 1.1em;
+	width: 600px;
+
+	background-color: var(--primaryDarkColor);
+	border-radius: 5px;
+
+	display: flex;
+	flex-flow: row wrap;
+
+	justify-content: center;
+}
+
+@media (max-device-width: 480px) {
+	.main__wrapper {
+		height: 100%
+	}
+
+	.form__wrapper {
+		height: 70vh;
+	}
+
+}
+
+.form__wrapper {
+	margin: 20px;
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	color: var(--primaryLightColor);
+}
+
+.form__wrapper p {
+	padding: 15px 0 5px 0;
+}
+
+#message__area, .input__area {
+	border: 0;
+	border-radius: 5px;
+	background-color: var(--primaryMainColor);
+	color: var(--textColor);
+	font-size: 1.5em;
+}
+
+.input__area:focus, #message__area:focus {
+	outline: none;
+}
+
+.input__area {
+	height: 50px;
+	width: calc(80% - 10px);
+	box-sizing: border-box; /* Very important thing */
+	padding-left: 10px;
+}
+
+#message__area {
+	width: calc(100% - 20px);
+	font-family: sans-serif;
+	padding: 10px;
+	box-sizing: border-box; /* Very important thing */
+	font-size: 1em;
+}
+
+.submit__btn {
+	margin-top: 15px;
+	width: 100px;
+	height: 50px;
+	font-size: 1em;
+	border: 0;
+	border-radius: 5px;
+	color: var(--textColor);
+	background-color: var(--primaryMainColor);
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	transition-duration: 300ms;
+}
+
+.submit__btn:hover {
+	background-color: var(--primaryLightColor);
+	cursor: pointer;
+}
+
+.submit__btn:focus {
+	outline: none;
+}
