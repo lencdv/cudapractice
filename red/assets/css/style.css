@@ -1,0 +1,141 @@
+body, ul, li, p, span, h1, h2, h3, a {
+	padding: 0;
+	margin: 0;
+	transition: all 500ms;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: normal;
+	opacity: 0.8;
+}
+
+body {
+	background-color: #62727b;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+/*div, p, ul, li {
+	border: 1px solid green;
+}*/
+
+#container {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.nav {
+	background-color: #37474f;
+	display: flex;
+}
+
+@media (max-width: 400px) {
+	.nav {
+		flex-flow: column nowrap;
+	}
+}
+
+.nav__logo {
+	align-self: center;
+	flex-basis: 30%;
+	text-align: center;
+	font-size: 1.7em;
+	font-weight: 300;
+	color: rgba(255,255,255,0.7);
+	cursor: default;
+}
+
+.nav__logo--right {
+	color: rgba(244,67,54,1);
+	font-weight: 300;
+	background-color: rgba(244,67,54,0.3);
+	padding: 5px;
+}
+
+.nav__logo--left {
+	padding: 5px;
+	white-space: nowrap;
+}
+
+.nav__links {
+	flex-basis: 70%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.nav__links--list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 20px 0;
+}
+
+.nav__links--list li {
+	margin: 10px 0;
+}
+
+/* 
+
+cyka blyat media query for smartphones below 
+it's necessary for proper vertical margins when menu items goes one per row
+
+*/
+
+@media (max-width: 400px) {
+	.nav__links--list li {
+		margin: 20px 0;
+	}
+}
+
+
+.nav__links--item {
+	color: rgba(244,67,54,.6);
+	font-size: 1.1em;
+	padding: 10px 20px;
+	margin: 0px 10px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 2px solid rgba(244,67,54,.3);
+	border-radius: 10px;
+	/*background-color: rgba(244,67,54,.1);*/
+	
+}
+
+.nav__links--item:hover {
+	color: rgba(244,67,54,1);
+	border: 2px solid #f44336;
+	background-color: rgba(244,67,54,.3);
+	box-shadow: 0 0 10px rgba(244,67,54,.7);
+}
+
+
+.colorhigh {
+	font-weight: 300;
+	font-size: 3em;
+	color: #666;
+	padding: 0;
+	margin: 0;
+}
+
+.welcome {
+	font-size: 2rem;
+}
+
+.welcome a {
+	color: #f44336;
+}
+
+.hamburger {
+	width: 50px;
+	height: 50px;
+	margin: 20px 0;
+	color: rgba(235,255,0,1);
+	border: 2px solid rgba(235,255,0,.3);
+	border-radius: 10px;
+	background-color: rgba(235,255,0,.3);
+	outline: none;
+}
