@@ -138,4 +138,82 @@ it's necessary for proper vertical margins when menu items goes one per row
 	border-radius: 10px;
 	background-color: rgba(235,255,0,.3);
 	outline: none;
+	visibility: hidden;
+}
+
+@media (max-width: 400px) {
+	.hamburger {
+		visibility: visible;
+	}
+
+	.nav__links {
+		display: none;
+	}
+
+}
+
+#form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url('../img/pattern.png');
+}
+
+.form__wrapper {
+	margin: 50px 0;
+	padding: 20px 0;
+	min-width: 350px;
+	color: rgba(55,71,79,0.7);
+	font-size: 1.2em;	
+	background-color: rgba(255,255,255,.6);
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form__wrapper p {
+	margin-top: 10px;
+}
+
+.input__area {
+	border: 0;
+	border-radius: 5px;
+	background-color: rgba(55,71,79,.3);
+	color: rgba(55,71,79,1);
+	font-size: 1.8rem;
+	height: 3rem;
+	width: 200px;
+}
+
+.input__area:focus {
+	outline: none;
+}
+
+.photo {
+	width: 7em;
+	border: 3px solid rgba(55,71,79,.3);
+	border-radius: 50%;
+}
+
+.submit__btn {
+	margin-top: 15px;
+	width: 100px;
+	height: 50px;
+	font-size: 1em;
+	border: 0;
+	border-radius: 5px;
+	color: rgba(255,255,255,.8);
+	background-color: rgba(244,67,54,.7);
+}
+
+.submit__btn:hover {
+	background-color: rgba(244,67,54,.9);
+	cursor: pointer;
+}
+
+.submit__btn:focus {
+	outline: none;
 }
